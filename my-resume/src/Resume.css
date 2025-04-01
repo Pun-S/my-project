@@ -1,0 +1,181 @@
+/* CoolWebsiteProfile.css */
+.cool-website-profile {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-nav {
+    background-color: #252525;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  
+  .nav-link {
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link.active, .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .profile-header {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    font-size: 3em;
+    color: #fff;
+  }
+  
+  .profile-info h1 {
+    margin-bottom: 5px;
+  }
+  
+  .profile-title {
+    color: #ccc;
+    font-size: 1.4em;
+  }
+  
+  .profile-main {
+    padding: 60px 0;
+  }
+  
+  .section {
+    margin-bottom: 60px;
+  }
+  
+  .section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    color: #007bff;
+  }
+  
+  .section-description {
+    line-height: 1.8;
+  }
+  
+  .experience-item h3 {
+    color: #007bff;
+  }
+  
+  .experience-duration,
+  .experience-company {
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+  
+  .experience-details,
+  .education-list,
+  .certifications-list {
+    list-style-type: disc;
+    margin-left: 25px;
+    line-height: 1.8;
+  }
+  
+  /* CoolWebsiteProfile.css (continued) */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .skill-item {
+    background-color: #252525;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ccc;
+    transition: transform 0.2s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .connect-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .connect-link {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .connect-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .header-content {
+      flex-direction: column;
+    }
+  
+    .profile-avatar {
+      margin: 0 auto 30px;
+    }
+  
+    .skill-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    .connect-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .connect-link {
+      margin: 10px 0;
+    }
+  }
